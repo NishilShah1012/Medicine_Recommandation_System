@@ -5,15 +5,15 @@ import pickle
 import ast
 
 #load the database
-symptoms = pd.read_csv('E:\Medicine Recommendation System\datasets\symptoms_df.csv')
-precautions = pd.read_csv('E:\Medicine Recommendation System\datasets\precautions_df.csv')
-workout = pd.read_csv('E:\Medicine Recommendation System\datasets\workout_df.csv')
-description = pd.read_csv('E:\Medicine Recommendation System\datasets\description.csv')
-medications = pd.read_csv('E:\Medicine Recommendation System\datasets\medications.csv')
-diets = pd.read_csv('E:\Medicine Recommendation System\datasets\diets.csv')
+symptoms = pd.read_csv('D:/Nishil/SEM-6/AIML/Project3/Medicine-Recommendation-System/datasets/symptoms_df.csv')
+precautions = pd.read_csv('D:/Nishil/SEM-6/AIML/Project3/Medicine-Recommendation-System/datasets/precautions_df.csv')
+workout = pd.read_csv('D:/Nishil/SEM-6/AIML/Project3/Medicine-Recommendation-System/datasets/workout_df.csv')
+description = pd.read_csv('D:/Nishil/SEM-6/AIML/Project3/Medicine-Recommendation-System/datasets/description.csv')
+medications = pd.read_csv('D:/Nishil/SEM-6/AIML/Project3/Medicine-Recommendation-System/datasets/medications.csv')
+diets = pd.read_csv('D:/Nishil/SEM-6/AIML/Project3/Medicine-Recommendation-System/datasets/diets.csv')
 
 #load the model
-svc = pickle.load(open('E:\Medicine Recommendation System\model\svc.pkl', 'rb'))
+svc = pickle.load(open('D:/Nishil/SEM-6/AIML/Project3/Medicine-Recommendation-System/model/svc.pkl', 'rb'))
 
 app = Flask(__name__)
 
